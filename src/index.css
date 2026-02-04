@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Inter", system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-midnight text-white antialiased;
+}
+
+* {
+  @apply selection:bg-highlight/40 selection:text-white;
+}
+
+.glass-panel {
+  @apply bg-panel/80 border border-white/10 backdrop-blur-xl;
+}
+
+.section-heading {
+  @apply text-sm uppercase tracking-[0.3em] text-white/60;
+}
+
+.button-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-highlight px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:translate-y-[-1px] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-highlight/70;
+}
+
+.button-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white/90 transition hover:border-white/40 hover:text-white;
+}
